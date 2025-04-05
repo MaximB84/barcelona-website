@@ -1,0 +1,69 @@
+/* Skip-Link */
+a.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  a.skip-link:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    background-color: yellow;
+    padding: 5px;
+    z-index: 1000;
+  }
+  
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #004080;
+    padding: 1rem;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+  }
+  
+  /* Galerie mit Grid */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  /* Bilder im Box-Modell */
+  img {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 50px;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* nth-child Beispiel */
+  .gallery img:nth-child(odd) {
+    background-color: #c92828;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem;
+  }
+  
